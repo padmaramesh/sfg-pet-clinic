@@ -36,6 +36,12 @@ class OwnerServiceMapTest {
     }
 
     @Test
+    void saveWithNoID() {
+        Owner owner = ownerServiceMap.save(Owner.builder().build());
+        assertNotNull(owner.getId());
+    }
+
+    @Test
     void deleteById() {
         ownerServiceMap.deleteById(ownerId);
         assertNull(ownerServiceMap.findById(ownerId));
