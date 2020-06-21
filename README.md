@@ -1,2 +1,2 @@
 # sfg-pet-clinic
-Spring Framework Application
+SFG Pet Clinic
